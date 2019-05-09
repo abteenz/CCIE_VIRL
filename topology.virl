@@ -4,7 +4,7 @@
         <entry key="management_network" type="String">user</entry>
         <entry key="AutoNetkit.enable_cdp" type="Boolean">true</entry>
     </extensions>
-    <node location="642,180" type="SIMPLE" subtype="IOSvL2" name="iosvl2-1">
+    <node location="642,180" type="SIMPLE" subtype="IOSvL2" name="SW1">
         <extensions>
             <entry key="config" type="string">! IOSvL2 Config generated on 2019-05-05 01:40
 ! by autonetkit_0.24.1
@@ -30,7 +30,7 @@ login local
 line con 0
 password cisco
 !
-hostname iosvl2-1
+hostname SW1
 !
 boot-start-marker
 boot-end-marker
@@ -133,7 +133,7 @@ end
         <interface name="GigabitEthernet0/3" id="2"/>
         <interface name="GigabitEthernet1/0" id="3"/>
     </node>
-    <node location="515,180" type="SIMPLE" subtype="IOSvL2" name="iosvl2-2">
+    <node location="515,180" type="SIMPLE" subtype="IOSvL2" name="SW2">
         <extensions>
             <entry key="config" type="string">! IOSvL2 Config generated on 2019-05-05 01:40
 ! by autonetkit_0.24.1
@@ -159,7 +159,7 @@ login local
 line con 0
 password cisco
 !
-hostname iosvl2-2
+hostname SW2
 !
 boot-start-marker
 boot-end-marker
@@ -262,7 +262,7 @@ end
         <interface name="GigabitEthernet0/3" id="2"/>
         <interface name="GigabitEthernet1/0" id="3"/>
     </node>
-    <node location="515,276" type="SIMPLE" subtype="IOSvL2" name="iosvl2-3">
+    <node location="515,276" type="SIMPLE" subtype="IOSvL2" name="SW3">
         <extensions>
             <entry key="config" type="string">! IOSvL2 Config generated on 2019-05-05 01:40
 ! by autonetkit_0.24.1
@@ -288,7 +288,7 @@ login local
 line con 0
 password cisco
 !
-hostname iosvl2-3
+hostname SW3
 !
 boot-start-marker
 boot-end-marker
@@ -391,7 +391,7 @@ end
         <interface name="GigabitEthernet0/3" id="2"/>
         <interface name="GigabitEthernet1/0" id="3"/>
     </node>
-    <node location="642,276" type="SIMPLE" subtype="IOSvL2" name="iosvl2-4">
+    <node location="642,276" type="SIMPLE" subtype="IOSvL2" name="SW4">
         <extensions>
             <entry key="config" type="string">! IOSvL2 Config generated on 2019-05-05 01:40
 ! by autonetkit_0.24.1
@@ -417,7 +417,7 @@ login local
 line con 0
 password cisco
 !
-hostname iosvl2-4
+hostname SW4
 !
 boot-start-marker
 boot-end-marker
