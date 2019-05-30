@@ -4,7 +4,7 @@
         <extensions>
             <entry key="Auto-generate config" type="Boolean">false</entry>
             <entry key="config" type="String">!
-! Last configuration change at 07:12:36 UTC Thu May 30 2019
+! Last configuration change at 17:23:29 UTC Thu May 30 2019
 !
 version 15.6
 service timestamps debug datetime msec
@@ -142,7 +142,7 @@ end
     <node name="R2" type="SIMPLE" subtype="IOSv" location="395,27">
         <extensions>
             <entry key="config" type="String">!
-! Last configuration change at 07:12:19 UTC Thu May 30 2019
+! Last configuration change at 17:23:33 UTC Thu May 30 2019
 !
 version 15.6
 service timestamps debug datetime msec
@@ -280,7 +280,7 @@ end
     <node name="CAT-1" type="SIMPLE" subtype="IOSvL2" location="221,298">
         <extensions>
             <entry key="config" type="String">!
-! Last configuration change at 07:09:59 UTC Thu May 30 2019
+! Last configuration change at 17:26:38 UTC Thu May 30 2019
 !
 version 15.2
 service timestamps debug datetime msec
@@ -328,61 +328,38 @@ vlan internal allocation policy ascending
 !
 !
 interface GigabitEthernet0/0
- shutdown
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/1
- switchport access vlan 21
- switchport mode access
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/2
- switchport access vlan 12
- switchport mode access
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/3
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/0
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/1
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/2
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/3
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet2/0
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
@@ -429,7 +406,6 @@ banner login `
 line con 0
 line aux 0
 line vty 0 4
- login
 !
 !
 end
@@ -448,7 +424,7 @@ end
     <node name="CAT-2" type="SIMPLE" subtype="IOSvL2" location="1112,154">
         <extensions>
             <entry key="config" type="String">!
-! Last configuration change at 07:09:57 UTC Thu May 30 2019
+! Last configuration change at 17:27:00 UTC Thu May 30 2019
 !
 version 15.2
 service timestamps debug datetime msec
@@ -496,61 +472,38 @@ vlan internal allocation policy ascending
 !
 !
 interface GigabitEthernet0/0
- shutdown
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/1
- switchport access vlan 21
- switchport mode access
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/2
- switchport access vlan 12
- switchport mode access
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/3
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/0
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/1
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/2
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/3
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet2/0
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
@@ -597,7 +550,6 @@ banner login `
 line con 0
 line aux 0
 line vty 0 4
- login
 !
 !
 end
@@ -616,7 +568,7 @@ end
     <node name="SW3" type="SIMPLE" subtype="IOSvL2" location="182,628">
         <extensions>
             <entry key="config" type="String">!
-! Last configuration change at 07:10:19 UTC Thu May 30 2019
+! Last configuration change at 17:27:12 UTC Thu May 30 2019
 !
 version 15.2
 service timestamps debug datetime msec
@@ -664,49 +616,30 @@ vlan internal allocation policy ascending
 !
 !
 interface GigabitEthernet0/0
- shutdown
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/1
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/2
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/3
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/0
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/1
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/2
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
@@ -753,7 +686,6 @@ banner login `
 line con 0
 line aux 0
 line vty 0 4
- login
 !
 !
 end
@@ -770,7 +702,7 @@ end
     <node name="SW4" type="SIMPLE" subtype="IOSvL2" location="1180,617">
         <extensions>
             <entry key="config" type="String">!
-! Last configuration change at 07:10:35 UTC Thu May 30 2019
+! Last configuration change at 17:27:02 UTC Thu May 30 2019
 !
 version 15.2
 service timestamps debug datetime msec
@@ -818,46 +750,30 @@ vlan internal allocation policy ascending
 !
 !
 interface GigabitEthernet0/0
- shutdown
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/1
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/2
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet0/3
- switchport trunk allowed vlan 12,21
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/0
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/1
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
 interface GigabitEthernet1/2
- switchport trunk encapsulation dot1q
- switchport mode trunk
  media-type rj45
  negotiation auto
 !
@@ -904,7 +820,6 @@ banner login `
 line con 0
 line aux 0
 line vty 0 4
- login
 !
 !
 end
